@@ -1,0 +1,98 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-color: #2c3e50;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.js-clock {
+  font-size: 60px;
+}
+
+.js-clock h1 {
+  margin: auto;
+}
+
+.form input::placeholder,
+.js-toDoForm input::placeholder {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
+.form input,
+.js-toDoForm input {
+  width: 400px;
+  height: 50px;
+  border: 0;
+  border-bottom: 2px solid whitesmoke;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 0 20px;
+  color: white;
+  background-color: transparent;
+}
+
+.form input:focus,
+.js-toDoForm input:focus {
+  outline: none;
+}
+
+.js-toDoForm input {
+  margin-top: 15px;
+}
+
+.form,
+.greetings {
+  display: none;
+  font-size: 50px;
+}
+
+.showing {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  font-size: 30px;
+}
+
+ul li button {
+  margin-right: 20px;
+  font-size: 30px;
+  color: red;
+  background-color: transparent;
+}
+
+.js-weather {
+  font-size: 30px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
